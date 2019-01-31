@@ -41,6 +41,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 ###############################################################################
 
 def main():
+    run_test_broken_1()
     """ Calls the   TEST   functions in this module. """
 
 
@@ -122,7 +123,7 @@ def broken_1(m):
     #    **  For full credit you must appropriately
     #    **  use (call) the   is_prime   function that is DEFINED ABOVE.
     count = 0
-    for k in range((2 * m) + 1):
+    for k in range(2 * (m + 1) - m):
         if is_prime(m + k):
             count = count + 1
     return count
